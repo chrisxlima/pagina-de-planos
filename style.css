@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, var(--blue) 50%, var(--page-background) 50%);
+}
+
+header {
+    padding: 3rem 0;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--page-background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+}
+
+header h2 {
+    text-align: center;
+    color: var(--page-background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+}
+
+.container {
+    background-color: var(--page-background);
+    width: 355px;
+    height: 470px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 15px -15px #000;
+}
+
+.container-dois {
+    background: var(--page-background);
+    width: 355px;
+    height: 490px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 15px -15px #000;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    height: 67px;
+    /* width: 100%; */
+}
+
+.header-dois {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    height: 76px;
+    /* width: 355px; */
+    background: var(--yellow);
+}
+
+.title p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-dois p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.btn button {
+    background: var(--blue);
+    border: none;
+    width: 94px;
+    height: 32px;
+    color: var(--page-background);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: var(--page-background);
+    color: var(--blue);
+    transition: all ease-in-out 0.5s;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    padding: 10px 35px;
+}
+
+.reais {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.centavos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mes {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-left: 6px;
+}
+
+.description {
+    padding: 0 35px;
+}
+
+.description p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.list {
+    padding: 35px;
+}
+
+.list ul {
+    display: flex;
+    flex-flow: column;
+    gap: 17px;
+}
+
+.list ul li {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray);
+    gap: 15px;
+}
+
+.btn-assinar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-assinar button {
+    background: var(--page-background);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    width: 296px;
+    height: 51px;
+    margin-top: 4.5rem;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-assinar-dois {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-assinar-dois button {
+    background: var(--blue);
+    color: var(--page-background);
+    width: 296px;
+    height: 51px;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-assinar-tres {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-assinar-tres button {
+    background: var(--page-background);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    width: 296px;
+    height: 51px;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+
+    body {
+        background: var(--blue);
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    header {
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        line-height: 3rem;
+    }
+
+    header h2 {
+        margin-top: 1rem;
+    }
+
+    .containers {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 2.3rem;
+        margin-bottom: 4rem;
+    }
+}
